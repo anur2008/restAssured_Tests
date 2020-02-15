@@ -1,0 +1,192 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "Columns",
+    "Filter",
+    "Table_TableName"
+  ],
+  "properties": {
+    "Columns": {
+      "$id": "#/properties/Columns",
+      "type": "array",
+      "title": "The Columns Schema",
+      "items": {
+        "$id": "#/properties/Columns/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "Id",
+          "Name",
+          "ReadOnly",
+          "Type",
+          "width"
+        ],
+        "properties": {
+          "Id": {
+            "$id": "#/properties/Columns/items/properties/Id",
+            "type": "string",
+            "title": "The Id Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Name": {
+            "$id": "#/properties/Columns/items/properties/Name",
+            "type": "string",
+            "title": "The Name Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ReadOnly": {
+            "$id": "#/properties/Columns/items/properties/ReadOnly",
+            "type": "string",
+            "title": "The Readonly Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Type": {
+            "$id": "#/properties/Columns/items/properties/Type",
+            "type": "string",
+            "title": "The Type Schema",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "width": {
+            "$id": "#/properties/Columns/items/properties/width",
+            "type": "integer",
+            "title": "The Width Schema",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          }
+        }
+      }
+    },
+    "Filter": {
+      "$id": "#/properties/Filter",
+      "type": "object",
+      "title": "The Filter Schema"
+    },
+    "Table_TableName": {
+      "$id": "#/properties/Table_TableName",
+      "type": "array",
+      "title": "The Table_tablename Schema",
+      "items": {
+        "$id": "#/properties/Table_TableName/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "response"
+        ],
+        "properties": {
+          "response": {
+            "$id": "#/properties/Table_TableName/items/properties/response",
+            "type": "array",
+            "title": "The Response Schema",
+            "items": {
+              "$id": "#/properties/Table_TableName/items/properties/response/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "Name",
+                "PONumber",
+                "RequestedBy",
+                "TotalPrice",
+                "_id"
+              ],
+              "properties": {
+                "Name": {
+                  "$id": "#/properties/Table_TableName/items/properties/response/items/properties/Name",
+                  "type": "string",
+                  "title": "The Name Schema",
+                  "default": "",
+                  "examples": [
+                    "string"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "PONumber": {
+                  "$id": "#/properties/Table_TableName/items/properties/response/items/properties/PONumber",
+                  "type": "string",
+                  "title": "The Ponumber Schema",
+                  "default": "",
+                  "examples": [
+                    "string"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "RequestedBy": {
+                  "$id": "#/properties/Table_TableName/items/properties/response/items/properties/RequestedBy",
+                  "type": "object",
+                  "title": "The Requestedby Schema",
+                  "required": [
+                    "Name",
+                    "_id"
+                  ],
+                  "properties": {
+                    "Name": {
+                      "$id": "#/properties/Table_TableName/items/properties/response/items/properties/RequestedBy/properties/Name",
+                      "type": "string",
+                      "title": "The Name Schema",
+                      "default": "",
+                      "examples": [
+                        "string"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "_id": {
+                      "$id": "#/properties/Table_TableName/items/properties/response/items/properties/RequestedBy/properties/_id",
+                      "type": "string",
+                      "title": "The _id Schema",
+                      "default": "",
+                      "examples": [
+                        "string"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "TotalPrice": {
+                  "$id": "#/properties/Table_TableName/items/properties/response/items/properties/TotalPrice",
+                  "type": "string",
+                  "title": "The Totalprice Schema",
+                  "default": "",
+                  "examples": [
+                    "string"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "_id": {
+                  "$id": "#/properties/Table_TableName/items/properties/response/items/properties/_id",
+                  "type": "string",
+                  "title": "The _id Schema",
+                  "default": "",
+                  "examples": [
+                    "string"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

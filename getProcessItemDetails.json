@@ -1,0 +1,831 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "_id",
+    "Name",
+    "_created_by",
+    "_modified_by",
+    "_created_at",
+    "_modified_at",
+    "_is_deleted",
+    "_flow_name",
+    "_current_step",
+    "_current_assigned_to",
+    "_completed_at",
+    "_status",
+    "_stage",
+    "_restart_info",
+    "_root_process_instance",
+    "_submitted_at",
+    "_request_number",
+    "_counter",
+    "_last_completed_step",
+    "_progress",
+    "Untitled_Field_1",
+    "Untitled_Field",
+    "Untitled_Field_2",
+    "Untitled_Field_3",
+    "Untitled_Field_4",
+    "Untitled_Field_5",
+    "Untitled_Field_6",
+    "Untitled_Field_7",
+    "Untitled_Field_8",
+    "Untitled_Field_9",
+    "Untitled_Field_10",
+    "Untitled_Field_11",
+    "Untitled_Field_12",
+    "Untitled_Field_13",
+    "Untitled_Field_14",
+    "Untitled_Field_15",
+    "Untitled_Field_16",
+    "Untitled_Field_17"
+  ],
+  "properties": {
+    "_id": {
+      "$id": "#/properties/_id",
+      "type": "string",
+      "title": "The _id Schema",
+      "default": "",
+      "examples": [
+        "Pk4ESYNV0DTv"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Name": {
+      "$id": "#/properties/Name",
+      "type": "string",
+      "title": "The Name Schema",
+      "default": "",
+      "examples": [
+        "Request for SmokeProcess"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_created_by": {
+      "$id": "#/properties/_created_by",
+      "type": "object",
+      "title": "The _created_by Schema",
+      "required": [
+        "_id",
+        "Name"
+      ],
+      "properties": {
+        "_id": {
+          "$id": "#/properties/_created_by/properties/_id",
+          "type": "string",
+          "title": "The _id Schema",
+          "default": "",
+          "examples": [
+            "Us9Bsf9DyUgS"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "Name": {
+          "$id": "#/properties/_created_by/properties/Name",
+          "type": "string",
+          "title": "The Name Schema",
+          "default": "",
+          "examples": [
+            "KF QA"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "_modified_by": {
+      "$id": "#/properties/_modified_by",
+      "type": "object",
+      "title": "The _modified_by Schema",
+      "required": [
+        "_id",
+        "Name"
+      ],
+      "properties": {
+        "_id": {
+          "$id": "#/properties/_modified_by/properties/_id",
+          "type": "string",
+          "title": "The _id Schema",
+          "default": "",
+          "examples": [
+            "Us9Bsf9DyUgS"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "Name": {
+          "$id": "#/properties/_modified_by/properties/Name",
+          "type": "string",
+          "title": "The Name Schema",
+          "default": "",
+          "examples": [
+            "KF QA"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "_created_at": {
+      "$id": "#/properties/_created_at",
+      "type": "string",
+      "title": "The _created_at Schema",
+      "default": "",
+      "examples": [
+        "2020-02-04T12:08:19Z"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_modified_at": {
+      "$id": "#/properties/_modified_at",
+      "type": "string",
+      "title": "The _modified_at Schema",
+      "default": "",
+      "examples": [
+        "2020-02-04T12:08:41Z"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_is_deleted": {
+      "$id": "#/properties/_is_deleted",
+      "type": "null",
+      "title": "The _is_deleted Schema",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "_flow_name": {
+      "$id": "#/properties/_flow_name",
+      "type": "string",
+      "title": "The _flow_name Schema",
+      "default": "",
+      "examples": [
+        "SmokeProcess"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_current_step": {
+      "$id": "#/properties/_current_step",
+      "type": "string",
+      "title": "The _current_step Schema",
+      "default": "",
+      "examples": [
+        "Approval1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_current_assigned_to": {
+      "$id": "#/properties/_current_assigned_to",
+      "type": "array",
+      "title": "The _current_assigned_to Schema",
+      "items": {
+        "$id": "#/properties/_current_assigned_to/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "_id",
+          "Name",
+          "Kind"
+        ],
+        "properties": {
+          "_id": {
+            "$id": "#/properties/_current_assigned_to/items/properties/_id",
+            "type": "string",
+            "title": "The _id Schema",
+            "default": "",
+            "examples": [
+              "UsPADIm5jOnj"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Name": {
+            "$id": "#/properties/_current_assigned_to/items/properties/Name",
+            "type": "string",
+            "title": "The Name Schema",
+            "default": "",
+            "examples": [
+              "QAYahoo UserAdmin"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Kind": {
+            "$id": "#/properties/_current_assigned_to/items/properties/Kind",
+            "type": "string",
+            "title": "The Kind Schema",
+            "default": "",
+            "examples": [
+              "User"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
+    "_completed_at": {
+      "$id": "#/properties/_completed_at",
+      "type": "null",
+      "title": "The _completed_at Schema",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "_status": {
+      "$id": "#/properties/_status",
+      "type": "string",
+      "title": "The _status Schema",
+      "default": "",
+      "examples": [
+        "InProgress"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_stage": {
+      "$id": "#/properties/_stage",
+      "type": "integer",
+      "title": "The _stage Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "_restart_info": {
+      "$id": "#/properties/_restart_info",
+      "type": "null",
+      "title": "The _restart_info Schema",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "_root_process_instance": {
+      "$id": "#/properties/_root_process_instance",
+      "type": "string",
+      "title": "The _root_process_instance Schema",
+      "default": "",
+      "examples": [
+        "Pk7ASYNVIo02"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_submitted_at": {
+      "$id": "#/properties/_submitted_at",
+      "type": "string",
+      "title": "The _submitted_at Schema",
+      "default": "",
+      "examples": [
+        "2020-02-04T12:08:41Z"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_request_number": {
+      "$id": "#/properties/_request_number",
+      "type": "integer",
+      "title": "The _request_number Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "_counter": {
+      "$id": "#/properties/_counter",
+      "type": "integer",
+      "title": "The _counter Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "_last_completed_step": {
+      "$id": "#/properties/_last_completed_step",
+      "type": "string",
+      "title": "The _last_completed_step Schema",
+      "default": "",
+      "examples": [
+        "PkDcSYNVId7M"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "_progress": {
+      "$id": "#/properties/_progress",
+      "type": "integer",
+      "title": "The _progress Schema",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "Untitled_Field_1": {
+      "$id": "#/properties/Untitled_Field_1",
+      "type": "string",
+      "title": "The Untitled_field_1 Schema",
+      "default": "",
+      "examples": [
+        "This is default content"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Untitled_Field": {
+      "$id": "#/properties/Untitled_Field",
+      "type": "string",
+      "title": "The Untitled_field Schema",
+      "default": "",
+      "examples": [
+        "This run is for process smoke testing\n"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Untitled_Field_2": {
+      "$id": "#/properties/Untitled_Field_2",
+      "type": "integer",
+      "title": "The Untitled_field_2 Schema",
+      "default": 0,
+      "examples": [
+        103
+      ]
+    },
+    "Untitled_Field_3": {
+      "$id": "#/properties/Untitled_Field_3",
+      "type": "string",
+      "title": "The Untitled_field_3 Schema",
+      "default": "",
+      "examples": [
+        "1000 USD"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Untitled_Field_4": {
+      "$id": "#/properties/Untitled_Field_4",
+      "type": "string",
+      "title": "The Untitled_field_4 Schema",
+      "default": "",
+      "examples": [
+        "2020-02-02"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Untitled_Field_5": {
+      "$id": "#/properties/Untitled_Field_5",
+      "type": "string",
+      "title": "The Untitled_field_5 Schema",
+      "default": "",
+      "examples": [
+        "2020-02-03T00:00:00+05:30 Asia/Calcutta"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Untitled_Field_6": {
+      "$id": "#/properties/Untitled_Field_6",
+      "type": "boolean",
+      "title": "The Untitled_field_6 Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "Untitled_Field_7": {
+      "$id": "#/properties/Untitled_Field_7",
+      "type": "object",
+      "title": "The Untitled_field_7 Schema",
+      "required": [
+        "uploaded",
+        "name",
+        "id",
+        "key",
+        "size",
+        "fileExtension",
+        "photos"
+      ],
+      "properties": {
+        "uploaded": {
+          "$id": "#/properties/Untitled_Field_7/properties/uploaded",
+          "type": "integer",
+          "title": "The Uploaded Schema",
+          "default": 0,
+          "examples": [
+            100
+          ]
+        },
+        "name": {
+          "$id": "#/properties/Untitled_Field_7/properties/name",
+          "type": "string",
+          "title": "The Name Schema",
+          "default": "",
+          "examples": [
+            "SampleImage.png"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "id": {
+          "$id": "#/properties/Untitled_Field_7/properties/id",
+          "type": "string",
+          "title": "The Id Schema",
+          "default": "",
+          "examples": [
+            "Attach-hfzn0g6weK"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "key": {
+          "$id": "#/properties/Untitled_Field_7/properties/key",
+          "type": "string",
+          "title": "The Key Schema",
+          "default": "",
+          "examples": [
+            "AcJwbAAFemos/SmokeProcess_05/Pk4ESYNV0DTv/Attach-hfzn0g6weK/SampleImage.png"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "size": {
+          "$id": "#/properties/Untitled_Field_7/properties/size",
+          "type": "integer",
+          "title": "The Size Schema",
+          "default": 0,
+          "examples": [
+            92147
+          ]
+        },
+        "fileExtension": {
+          "$id": "#/properties/Untitled_Field_7/properties/fileExtension",
+          "type": "string",
+          "title": "The Fileextension Schema",
+          "default": "",
+          "examples": [
+            "png"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "photos": {
+          "$id": "#/properties/Untitled_Field_7/properties/photos",
+          "type": "array",
+          "title": "The Photos Schema",
+          "items": {
+            "$id": "#/properties/Untitled_Field_7/properties/photos/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "fileExtension",
+              "height",
+              "key",
+              "name",
+              "size",
+              "width"
+            ],
+            "properties": {
+              "fileExtension": {
+                "$id": "#/properties/Untitled_Field_7/properties/photos/items/properties/fileExtension",
+                "type": "string",
+                "title": "The Fileextension Schema",
+                "default": "",
+                "examples": [
+                  "png"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "height": {
+                "$id": "#/properties/Untitled_Field_7/properties/photos/items/properties/height",
+                "type": "integer",
+                "title": "The Height Schema",
+                "default": 0,
+                "examples": [
+                  628
+                ]
+              },
+              "key": {
+                "$id": "#/properties/Untitled_Field_7/properties/photos/items/properties/key",
+                "type": "string",
+                "title": "The Key Schema",
+                "default": "",
+                "examples": [
+                  "AcJwbAAFemos/SmokeProcess_05/Pk4ESYNV0DTv/Attach-hfzn0g6weK/SampleImage.png"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "name": {
+                "$id": "#/properties/Untitled_Field_7/properties/photos/items/properties/name",
+                "type": "string",
+                "title": "The Name Schema",
+                "default": "",
+                "examples": [
+                  "SampleImage.png"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "size": {
+                "$id": "#/properties/Untitled_Field_7/properties/photos/items/properties/size",
+                "type": "integer",
+                "title": "The Size Schema",
+                "default": 0,
+                "examples": [
+                  2612480
+                ]
+              },
+              "width": {
+                "$id": "#/properties/Untitled_Field_7/properties/photos/items/properties/width",
+                "type": "integer",
+                "title": "The Width Schema",
+                "default": 0,
+                "examples": [
+                  1040
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "Untitled_Field_8": {
+      "$id": "#/properties/Untitled_Field_8",
+      "type": "integer",
+      "title": "The Untitled_field_8 Schema",
+      "default": 0,
+      "examples": [
+        3
+      ]
+    },
+    "Untitled_Field_9": {
+      "$id": "#/properties/Untitled_Field_9",
+      "type": "string",
+      "title": "The Untitled_field_9 Schema",
+      "default": "",
+      "examples": [
+        "One"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Untitled_Field_10": {
+      "$id": "#/properties/Untitled_Field_10",
+      "type": "array",
+      "title": "The Untitled_field_10 Schema",
+      "items": {
+        "$id": "#/properties/Untitled_Field_10/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "Two"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "Untitled_Field_11": {
+      "$id": "#/properties/Untitled_Field_11",
+      "type": "integer",
+      "title": "The Untitled_field_11 Schema",
+      "default": 0,
+      "examples": [
+        4
+      ]
+    },
+    "Untitled_Field_12": {
+      "$id": "#/properties/Untitled_Field_12",
+      "type": "object",
+      "title": "The Untitled_field_12 Schema",
+      "required": [
+        "_id",
+        "Name"
+      ],
+      "properties": {
+        "_id": {
+          "$id": "#/properties/Untitled_Field_12/properties/_id",
+          "type": "string",
+          "title": "The _id Schema",
+          "default": "",
+          "examples": [
+            "UsrYDImhppIh"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "Name": {
+          "$id": "#/properties/Untitled_Field_12/properties/Name",
+          "type": "string",
+          "title": "The Name Schema",
+          "default": "",
+          "examples": [
+            "QAOutlook User"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "Untitled_Field_13": {
+      "$id": "#/properties/Untitled_Field_13",
+      "type": "array",
+      "title": "The Untitled_field_13 Schema",
+      "items": {
+        "$id": "#/properties/Untitled_Field_13/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "value",
+          "selected"
+        ],
+        "properties": {
+          "value": {
+            "$id": "#/properties/Untitled_Field_13/items/properties/value",
+            "type": "string",
+            "title": "The Value Schema",
+            "default": "",
+            "examples": [
+              "One"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "selected": {
+            "$id": "#/properties/Untitled_Field_13/items/properties/selected",
+            "type": "boolean",
+            "title": "The Selected Schema",
+            "default": false,
+            "examples": [
+              false
+            ]
+          }
+        }
+      }
+    },
+    "Untitled_Field_14": {
+      "$id": "#/properties/Untitled_Field_14",
+      "type": "array",
+      "title": "The Untitled_field_14 Schema",
+      "items": {
+        "$id": "#/properties/Untitled_Field_14/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "uploaded",
+          "name",
+          "id",
+          "key",
+          "size",
+          "fileExtension"
+        ],
+        "properties": {
+          "uploaded": {
+            "$id": "#/properties/Untitled_Field_14/items/properties/uploaded",
+            "type": "integer",
+            "title": "The Uploaded Schema",
+            "default": 0,
+            "examples": [
+              100
+            ]
+          },
+          "name": {
+            "$id": "#/properties/Untitled_Field_14/items/properties/name",
+            "type": "string",
+            "title": "The Name Schema",
+            "default": "",
+            "examples": [
+              "SampleTextFile.rtf"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "id": {
+            "$id": "#/properties/Untitled_Field_14/items/properties/id",
+            "type": "string",
+            "title": "The Id Schema",
+            "default": "",
+            "examples": [
+              "Attach-qcHn0g6yLp"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "key": {
+            "$id": "#/properties/Untitled_Field_14/items/properties/key",
+            "type": "string",
+            "title": "The Key Schema",
+            "default": "",
+            "examples": [
+              "AcJwbAAFemos/SmokeProcess_05/Pk4ESYNV0DTv/Attach-qcHn0g6yLp/SampleTextFile.rtf"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "size": {
+            "$id": "#/properties/Untitled_Field_14/items/properties/size",
+            "type": "integer",
+            "title": "The Size Schema",
+            "default": 0,
+            "examples": [
+              490
+            ]
+          },
+          "fileExtension": {
+            "$id": "#/properties/Untitled_Field_14/items/properties/fileExtension",
+            "type": "string",
+            "title": "The Fileextension Schema",
+            "default": "",
+            "examples": [
+              "rtf"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
+    "Untitled_Field_15": {
+      "$id": "#/properties/Untitled_Field_15",
+      "type": "object",
+      "title": "The Untitled_field_15 Schema",
+      "required": [
+        "key",
+        "name"
+      ],
+      "properties": {
+        "key": {
+          "$id": "#/properties/Untitled_Field_15/properties/key",
+          "type": "string",
+          "title": "The Key Schema",
+          "default": "",
+          "examples": [
+            "AcJwbAAFemos/SmokeProcess_05/Pk4ESYNV0DTv/Untitled_Field_15.png"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "name": {
+          "$id": "#/properties/Untitled_Field_15/properties/name",
+          "type": "string",
+          "title": "The Name Schema",
+          "default": "",
+          "examples": [
+            "Untitled_Field_15"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "Untitled_Field_16": {
+      "$id": "#/properties/Untitled_Field_16",
+      "type": "object",
+      "title": "The Untitled_field_16 Schema",
+      "required": [
+        "_created_by",
+        "_id",
+        "Name"
+      ],
+      "properties": {
+        "_created_by": {
+          "$id": "#/properties/Untitled_Field_16/properties/_created_by",
+          "type": "object",
+          "title": "The _created_by Schema",
+          "required": [
+            "_id",
+            "Name"
+          ],
+          "properties": {
+            "_id": {
+              "$id": "#/properties/Untitled_Field_16/properties/_created_by/properties/_id",
+              "type": "string",
+              "title": "The _id Schema",
+              "default": "",
+              "examples": [
+                "Us9Bsf9DyUgS"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "Name": {
+              "$id": "#/properties/Untitled_Field_16/properties/_created_by/properties/Name",
+              "type": "string",
+              "title": "The Name Schema",
+              "default": "",
+              "examples": [
+                "KF QA"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "_id": {
+          "$id": "#/properties/Untitled_Field_16/properties/_id",
+          "type": "string",
+          "title": "The _id Schema",
+          "default": "",
+          "examples": [
+            "PkFiSP47ARkR"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "Name": {
+          "$id": "#/properties/Untitled_Field_16/properties/Name",
+          "type": "string",
+          "title": "The Name Schema",
+          "default": "",
+          "examples": [
+            "Request for EndtoEnd"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "Untitled_Field_17": {
+      "$id": "#/properties/Untitled_Field_17",
+      "type": "string",
+      "title": "The Untitled_field_17 Schema",
+      "default": "",
+      "examples": [
+        "2"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
